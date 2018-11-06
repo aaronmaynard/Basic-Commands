@@ -11,7 +11,7 @@ commands:
       aliases: [b]
       permission: basic.commands.admin.broadcast
       permission-message: You do not have /<permission>
-      usage: /<command> [message]
+      usage: /<command> <message>
     time:
       description: Sets the time
       aliases: []
@@ -20,7 +20,7 @@ commands:
       usage: /<command> [morning|day|evening|night|ticks]
     gamemode:
       description: Change player gamemode
-      aliases: [gma, gms, gmc, gmsa]
+      aliases: [gma, gms, gmc, gmsp]
       permission: basic.commands.admin.gamemode
       permission-message: You do not have /<permission>
       usage: /<command> [player]
@@ -53,37 +53,37 @@ commands:
       aliases: []
       permission: basic.commands.player.home
       permission-message: You do not have /<permission>
-      usage: /<command> [name]
+      usage: /<command> <name>
     sethome:
       description: Sets player home
       aliases: []
       permission: basic.commands.player.sethome
       permission-message: You do not have /<permission>
-      usage: /<command> [name]
+      usage: /<command> <name>
     delhome:
       description: Deletes player home
       aliases: []
       permission: basic.commands.player.delhome
       permission-message: You do not have /<permission>
-      usage: /<command> [name]
+      usage: /<command> <name>
     warp:
       description: Teleports to server warp
       aliases: []
-      permission: basic.commands.admin.warp
+      permission: basic.commands.player.warp
       permission-message: You do not have /<permission>
-      usage: /<command> [name]
+      usage: /<command> <name>
     setwarp:
       description: Sets server warps
       aliases: []
       permission: basic.commands.admin.setwarp
       permission-message: You do not have /<permission>
-      usage: /<command> [name]
+      usage: /<command> <name>
     delwarp:
       description: Deletes server warps
       aliases: []
       permission: basic.commands.admin.delwarp
       permission-message: You do not have /<permission>
-      usage: /<command> [name]
+      usage: /<command> <name>
     setspawn:
       description: Sets server spawn
       aliases: []
@@ -119,7 +119,7 @@ commands:
       aliases: [mob]
       permission: basic.commands.admin.spawnmob
       permission-message: You do not have /<permission>
-      usage: /<command> [player]
+      usage: /<command> <mobType>
     hat:
       description: Wear anything as a hat
       aliases: []
