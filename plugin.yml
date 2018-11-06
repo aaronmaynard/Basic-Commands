@@ -1,0 +1,146 @@
+name: Basic-Commands
+version: 1.0
+authors: [Aaron Maynard]
+main: com.aaronmaynard.basic.Basic
+prefix: Basic Commands
+description: Basic commands for your server
+website: http://development.aaronmaynard.com/
+commands:
+    broadcast:
+      description: Broadcasts a message server wide
+      aliases: [b]
+      permission: basic.commands.admin.broadcast
+      permission-message: You do not have /<permission>
+      usage: /<command> [message]
+    time:
+      description: Sets the time
+      aliases: []
+      permission: basic.commands.admin.time
+      permission-message: You do not have /<permission>
+      usage: /<command> [morning|day|evening|night|ticks]
+    gamemode:
+      description: Change player gamemode
+      aliases: [gma, gms, gmc, gmsa]
+      permission: basic.commands.admin.gamemode
+      permission-message: You do not have /<permission>
+      usage: /<command> [player]
+    fly:
+      description: Enable flying
+      aliases: []
+      permission: basic.commands.admin.fly
+      permission-message: You do not have /<permission>
+      usage: /<command> [player]
+    pm:
+      description: Private message another player
+      aliases: [msg]
+      permission: basic.commands.player.pm
+      permission-message: You do not have /<permission>
+      usage: /<command> <player> <message>
+    nickname:
+      description: Change player nickname
+      aliases: [nick]
+      permission: basic.commands.player.nick
+      permission-message: You do not have /<permission>
+      usage: /<command> [nickname|off]
+    afk:
+      description: Sets player afk
+      aliases: []
+      permission: basic.commands.player.afk
+      permission-message: You do not have /<permission>
+      usage: /<command>
+    home:
+      description: Teleports player home
+      aliases: []
+      permission: basic.commands.player.home
+      permission-message: You do not have /<permission>
+      usage: /<command> [name]
+    sethome:
+      description: Sets player home
+      aliases: []
+      permission: basic.commands.player.sethome
+      permission-message: You do not have /<permission>
+      usage: /<command> [name]
+    delhome:
+      description: Deletes player home
+      aliases: []
+      permission: basic.commands.player.delhome
+      permission-message: You do not have /<permission>
+      usage: /<command> [name]
+    warp:
+      description: Teleports to server warp
+      aliases: []
+      permission: basic.commands.admin.warp
+      permission-message: You do not have /<permission>
+      usage: /<command> [name]
+    setwarp:
+      description: Sets server warps
+      aliases: []
+      permission: basic.commands.admin.setwarp
+      permission-message: You do not have /<permission>
+      usage: /<command> [name]
+    delwarp:
+      description: Deletes server warps
+      aliases: []
+      permission: basic.commands.admin.delwarp
+      permission-message: You do not have /<permission>
+      usage: /<command> [name]
+    setspawn:
+      description: Sets server spawn
+      aliases: []
+      permission: basic.commands.admin.setspawn
+      permission-message: You do not have /<permission>
+      usage: /<command>
+    spawn:
+      description: Teleports to server spawn
+      aliases: []
+      permission: basic.commands.admin.spawn
+      permission-message: You do not have /<permission>
+      usage: /<command>
+    heal:
+      description: Heals the player
+      aliases: []
+      permission: basic.commands.admin.heal
+      permission-message: You do not have /<permission>
+      usage: /<command> [player]
+    feed:
+      description: Feeds the player
+      aliases: []
+      permission: basic.commands.admin.feed
+      permission-message: You do not have /<permission>
+      usage: /<command> [player]
+    weaken:
+      description: Weakens the player
+      aliases: []
+      permission: basic.commands.admin.weaken
+      permission-message: You do not have /<permission>
+      usage: /<command> [player]
+    spawnmob:
+      description: A mob spawner command
+      aliases: [mob]
+      permission: basic.commands.admin.spawnmob
+      permission-message: You do not have /<permission>
+      usage: /<command> [player]
+    hat:
+      description: Wear anything as a hat
+      aliases: []
+      permission: basic.commands.player.hat
+      permission-message: You do not have /<permission>
+      usage: /<command>
+    weather:
+      description: Changes the weather
+      aliases: [clear, rain, storm]
+      permission: basic.commands.admin.weather
+      permission-message: You do not have /<permission>
+      usage: /<command> clear|rain|storm [world]
+    balance:
+      description: Check player balance
+      aliases: [bal, money]
+      permission: basic.commands.player.balance
+      permission-message: You do not have /<permission>
+      usage: /<command>
+    pay:
+      description: Pays another player
+      aliases: []
+      permission: basic.commands.player.pay
+      permission-message: You do not have /<permission>
+      usage: /<command> player amount
